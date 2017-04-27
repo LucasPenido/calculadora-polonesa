@@ -30,7 +30,40 @@ char pop(pilha p) {
     return '1';
 }
 
-int main() {
+char *leia_expressao() {
+    return NULL;
+}
 
+int calcula_expressao(char *expressao) {
+    return 0;
+}
+
+int main() {
+    pilha *p = (pilha*) malloc(sizeof(pilha));
+    int menu, resultado;
+    char *expressao;
+
+    do {
+        printf("\nEscolha uma opção:\n");
+        printf("1- Calcular expressão\n");
+        printf("2- Sair\n");
+        printf("Opção: ");
+        scanf("%d", &menu);
+
+        switch(menu) {
+            case 1:
+                expressao = leia_expressao();
+                resultado = calcula_expressao(expressao);
+                printf("\nO resultado da expressão %s: %d\n", expressao, resultado);
+                break;
+            case 2:
+                menu = -1;
+                printf("\nXau :D\n");
+                break;
+            default:
+                printf("\nOpção inválida!\n");
+                break;
+        }
+    } while(menu != -1);
     return 0;
 }
