@@ -1,8 +1,12 @@
 # Calculadora Polonesa
 
-
+## Permissão run.sh
 ```sh
-Compilar e rodar
+chmod 755 run.sh
+```
+
+## Compilar e rodar
+```sh
 ./run.sh
 ```
 
