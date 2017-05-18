@@ -2,7 +2,7 @@
 
 typedef struct _pilha {
     char c;
-    struct pilha *ant;
+    struct _pilha *ant;
 } pilha;
 
 void add(pilha *p, char c);
